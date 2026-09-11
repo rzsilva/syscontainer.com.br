@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L] 
+
+ErrorDocument 404 /404.html
+Options +MultiViews
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Defina o pacote “ea-php73” como a linguagem padrão de programação “PHP”.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
