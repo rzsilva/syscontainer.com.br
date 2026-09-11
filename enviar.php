@@ -14,5 +14,5 @@
 	// $env->Send("site", "rafael_zacche@hotmail.com", $subject, $mensagemHTML);
 	$env->Send("no-reply", "contato@adaline.com.br", "Contato www.syscontainer.com.br", $mensagemHTML);
 		
-	header("Location: ./index.html#contact");
+	header("Location: ./index.php#contact");
 ?>
