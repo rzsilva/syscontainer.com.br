@@ -2,13 +2,13 @@
 $pageTitle = "Blog SYSContainer — Gestão de locadoras de containers, banheiros químicos e andaimes";
 $pageDescription = "Artigos práticos sobre gestão, financeiro, precificação, manutenção e segurança para locadoras de containers, banheiros químicos e andaimes.";
 
-$postsFile = __DIR__ . '/data/posts.json';
+$postsFile = dirname(__FILE__) . '/data/posts.json';
 $posts = json_decode(file_get_contents($postsFile), true);
 if (!is_array($posts)) {
     $posts = array();
 }
 
-include __DIR__ . '/partials/header.php';
+include dirname(__FILE__) . '/partials/header.php';
 ?>
 
 <header class="sc-blog-hero">
@@ -36,4 +36,4 @@ include __DIR__ . '/partials/header.php';
     </div>
 </section>
 
-<?php include __DIR__ . '/partials/footer.php'; ?>
+<?php include dirname(__FILE__) . '/partials/footer.php'; ?>

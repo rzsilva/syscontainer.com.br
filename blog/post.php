@@ -1,5 +1,5 @@
 <?php
-$postsFile = __DIR__ . '/data/posts.json';
+$postsFile = dirname(__FILE__) . '/data/posts.json';
 $posts = json_decode(file_get_contents($postsFile), true);
 if (!is_array($posts)) {
     $posts = array();
@@ -15,10 +15,10 @@ foreach ($posts as $p) {
 }
 
 if (!$post) {
-    http_response_code(404);
+    header('HTTP/1.1 404 Not Found');
     $pageTitle = "Artigo não encontrado | Blog SYSContainer";
     $pageDescription = "O artigo que você procura não foi encontrado.";
-    include __DIR__ . '/partials/header.php';
+    include dirname(__FILE__) . '/partials/header.php';
     ?>
     <header class="sc-post-hero">
         <div class="container">
@@ -27,13 +27,13 @@ if (!$post) {
         </div>
     </header>
     <?php
-    include __DIR__ . '/partials/footer.php';
+    include dirname(__FILE__) . '/partials/footer.php';
     exit;
 }
 
 $pageTitle = $post['title'] . " | Blog SYSContainer";
 $pageDescription = $post['description'];
-include __DIR__ . '/partials/header.php';
+include dirname(__FILE__) . '/partials/header.php';
 ?>
 
 <header class="sc-post-hero">
@@ -54,4 +54,4 @@ include __DIR__ . '/partials/header.php';
     </div>
 </article>
 
-<?php include __DIR__ . '/partials/footer.php'; ?>
+<?php include dirname(__FILE__) . '/partials/footer.php'; ?>
