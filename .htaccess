@@ -1,8 +1,8 @@
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L] 
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:[0-9]+)?$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
-ErrorDocument 404 /404.html
 Options +MultiViews
 
 # php -- BEGIN cPanel-generated handler, do not edit
