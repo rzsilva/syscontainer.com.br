@@ -1,0 +1,578 @@
+/* ==========================================================================
+   SYSContainer — camada de estilos modernos (redesign comercial)
+   Carregado depois de styles/style.css para sobrepor apenas o necessário.
+   Seletores prefixados com .landing-page para garantir especificidade
+   igual ou maior que as regras legadas de style.css.
+   ========================================================================== */
+
+:root {
+  --sc-blue: #3498db;
+  --sc-blue-dark: #2980b9;
+  --sc-navy: #1f2d3d;
+  --sc-navy-soft: #34495e;
+  --sc-ink: #33414f;
+  --sc-muted: #6a7685;
+  --sc-bg-soft: #f7f9fb;
+  --sc-border: #e6e9ee;
+  --sc-radius: 10px;
+  --sc-shadow: 0 10px 30px rgba(31, 45, 61, 0.08);
+}
+
+.landing-page {
+  font-size: 15px;
+  color: var(--sc-ink);
+}
+
+.landing-page section {
+  border-bottom: none;
+}
+
+.landing-page h1,
+.landing-page h2,
+.landing-page h3,
+.landing-page h4 {
+  font-weight: 600;
+  color: var(--sc-navy);
+}
+
+.landing-page p.sc-lead,
+.landing-page .sc-lead {
+  font-size: 17px;
+  color: var(--sc-muted);
+  max-width: 640px;
+  margin: 12px auto 0;
+}
+
+.landing-page p.sc-note,
+.landing-page .sc-note {
+  font-size: 12px;
+  color: var(--sc-muted);
+  margin-top: 16px;
+}
+
+/* ---------- Hero ---------- */
+
+.landing-page header.sc-hero {
+  background: linear-gradient(180deg, #eef4fa 0%, #ffffff 100%);
+  height: auto;
+  min-height: 0;
+  padding: 150px 0 70px;
+}
+
+.sc-hero-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sc-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sc-blue-dark);
+  background: rgba(52, 152, 219, 0.1);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.landing-page .sc-hero-copy h1 {
+  font-size: 38px;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+.landing-page p.sc-hero-lead {
+  font-size: 17px;
+  color: var(--sc-muted);
+  margin-bottom: 26px;
+}
+
+.sc-hero-ctas {
+  margin-bottom: 26px;
+}
+
+.sc-hero-ctas .btn {
+  border-radius: 6px;
+  font-weight: 600;
+  margin-right: 12px;
+  margin-bottom: 10px;
+}
+
+.sc-hero-checks {
+  margin: 0;
+}
+
+.landing-page .sc-hero-checks li {
+  color: var(--sc-muted);
+  margin-bottom: 8px;
+}
+
+.sc-hero-checks i {
+  color: var(--sc-blue);
+  margin-right: 8px;
+}
+
+.sc-hero-media {
+  text-align: center;
+}
+
+.sc-hero-img {
+  border-radius: var(--sc-radius);
+  box-shadow: var(--sc-shadow);
+}
+
+/* ---------- Trust bar ---------- */
+
+.landing-page .sc-trustbar {
+  background: var(--sc-navy);
+  padding: 22px 0;
+}
+
+.landing-page .sc-trust-item {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 8px 0;
+}
+
+.sc-trust-item i {
+  display: block;
+  font-size: 22px;
+  color: var(--sc-blue);
+  margin-bottom: 8px;
+}
+
+/* ---------- Value section ---------- */
+
+.landing-page .sc-value {
+  padding: 80px 0;
+}
+
+.sc-value-grid {
+  margin-top: 50px;
+}
+
+.sc-value-grid > div {
+  margin-bottom: 30px;
+}
+
+.sc-value-icon {
+  font-size: 30px;
+  color: var(--sc-blue);
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.landing-page .sc-value-grid h4 {
+  margin-bottom: 10px;
+}
+
+.landing-page .sc-value-grid p {
+  color: var(--sc-muted);
+}
+
+/* ---------- Features ---------- */
+
+.landing-page .sc-features {
+  padding: 80px 0;
+}
+
+.sc-feature-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.sc-feature-row:first-of-type {
+  margin-top: 50px;
+}
+
+.sc-feature-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--sc-blue-dark);
+  margin-bottom: 10px;
+}
+
+.landing-page .sc-feature-copy h3 {
+  margin-bottom: 14px;
+}
+
+.landing-page .sc-feature-copy p {
+  color: var(--sc-muted);
+  font-size: 16px;
+}
+
+.sc-feature-img {
+  border-radius: var(--sc-radius);
+  box-shadow: var(--sc-shadow);
+  border: 1px solid var(--sc-border);
+}
+
+/* ---------- How it works ---------- */
+
+.landing-page .sc-how {
+  padding: 80px 0;
+}
+
+.sc-how-steps {
+  margin-top: 50px;
+}
+
+.sc-how-steps > div {
+  margin-bottom: 30px;
+}
+
+.sc-step-number {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 50%;
+  background: var(--sc-blue);
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 auto 16px;
+}
+
+.landing-page .sc-how-steps p {
+  color: var(--sc-muted);
+}
+
+/* ---------- Integrations ---------- */
+
+.landing-page .sc-integrations {
+  padding: 80px 0;
+}
+
+.sc-integration-cards {
+  margin-top: 40px;
+}
+
+.sc-integration-card {
+  background: #fff;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius);
+  padding: 30px;
+  margin-bottom: 20px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.landing-page .sc-integration-card h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.sc-integration-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sc-shadow);
+}
+
+.sc-integration-icon {
+  font-size: 26px;
+  color: var(--sc-blue);
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.sc-integration-price {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--sc-blue-dark);
+  background: rgba(52, 152, 219, 0.1);
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.landing-page .sc-integration-card p {
+  color: var(--sc-muted);
+}
+
+.landing-page p.sc-integration-combo {
+  font-size: 16px;
+  color: var(--sc-navy);
+  margin-top: 10px;
+}
+
+.sc-integration-combo i {
+  color: var(--sc-blue);
+  margin-right: 6px;
+}
+
+/* ---------- Pricing ---------- */
+
+.landing-page .sc-pricing {
+  padding: 80px 0;
+}
+
+.sc-pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.landing-page .sc-plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: var(--sc-radius);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.landing-page .sc-plan:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sc-shadow);
+}
+
+.landing-page .sc-plan-highlight {
+  border: 2px solid var(--sc-blue);
+  box-shadow: var(--sc-shadow);
+}
+
+.landing-page .pricing-plan li.sc-plan-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--sc-blue);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 999px;
+}
+
+.landing-page .sc-plan .pricing-price small {
+  font-size: 14px;
+  color: var(--sc-muted);
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.landing-page .sc-plan li:last-child {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.landing-page .sc-plan .btn {
+  margin: 16px 0;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.sc-pricing-footnote {
+  margin-top: 40px;
+}
+
+/* ---------- FAQ ---------- */
+
+.landing-page .sc-faq {
+  padding: 80px 0;
+}
+
+.sc-faq-accordion {
+  margin-top: 40px;
+}
+
+.sc-faq-accordion .panel {
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius);
+  box-shadow: none;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.sc-faq-accordion .panel-heading {
+  background: #fff;
+  padding: 0;
+}
+
+.landing-page .sc-faq-accordion .panel-title a {
+  display: block;
+  padding: 16px 20px;
+  color: var(--sc-navy);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.landing-page .sc-faq-accordion .panel-body {
+  color: var(--sc-muted);
+}
+
+/* ---------- CTA band ---------- */
+
+.landing-page .sc-cta-band {
+  background: var(--sc-navy);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.landing-page .sc-cta-band h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.sc-cta-band p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  margin-bottom: 26px;
+}
+
+.sc-cta-band .btn {
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* ---------- Contact ---------- */
+
+.sc-contact-row {
+  margin-top: 50px;
+}
+
+.landing-page .sc-contact-form label {
+  display: block;
+  font-weight: 600;
+  color: var(--sc-navy);
+  margin-bottom: 6px;
+}
+
+.landing-page .sc-contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.landing-page .sc-contact-form .form-control {
+  height: 44px;
+  border-radius: 6px;
+  border: 1px solid var(--sc-border);
+  box-shadow: none;
+}
+
+.landing-page .sc-contact-form textarea.form-control {
+  height: auto;
+}
+
+.landing-page .sc-contact-submit {
+  border-radius: 6px;
+  font-weight: 600;
+  height: 44px;
+}
+
+.landing-page .sc-contact-card {
+  background: #fff;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius);
+  padding: 30px;
+  margin-top: 28px;
+}
+
+@media (max-width: 767px) {
+  .landing-page .sc-contact-card {
+    margin-top: 0;
+  }
+}
+
+.landing-page .sc-contact-card h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sc-contact-list {
+  margin: 0;
+}
+
+.landing-page .sc-contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--sc-muted);
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.landing-page .sc-contact-list li:last-child {
+  margin-bottom: 0;
+}
+
+.sc-contact-list i {
+  color: var(--sc-blue);
+  font-size: 16px;
+  width: 18px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* ---------- WhatsApp floating button (override legacy white text) ---------- */
+
+.landing-page .whatsapp-label {
+  color: var(--sc-navy);
+  background: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  box-shadow: var(--sc-shadow);
+  font-weight: 600;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 767px) {
+  .landing-page header.sc-hero {
+    padding: 120px 0 50px;
+    text-align: center;
+  }
+
+  .landing-page .sc-hero-copy h1 {
+    font-size: 28px;
+  }
+
+  .sc-hero-media {
+    margin-top: 30px;
+  }
+
+  .sc-hero-ctas .btn {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .landing-page .sc-value,
+  .landing-page .sc-features,
+  .landing-page .sc-how,
+  .landing-page .sc-integrations,
+  .landing-page .sc-pricing,
+  .landing-page .sc-faq {
+    padding: 50px 0;
+  }
+
+  .sc-feature-row {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .sc-feature-img {
+    margin-top: 20px;
+  }
+
+  .landing-page .sc-plan {
+    margin-bottom: 30px;
+  }
+}
