@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# /blog/algum-slug -> post.php?slug=algum-slug
+# Só reescreve quando o caminho não corresponde a um arquivo ou pasta real
+# (assim index.php, post.php, data/ e partials/ continuam funcionando normalmente).
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z0-9-]+)/?$ post.php?slug=$1 [L,QSA]

@@ -54,6 +54,7 @@
                 <li><a class="page-scroll" href="#integrations">INTEGRAÇÕES</a></li>
                 <li><a class="page-scroll" href="#pricing">PLANOS</a></li>
                 <li><a class="page-scroll" href="#faq">DÚVIDAS</a></li>
+                <li><a href="blog/index.php">BLOG</a></li>
                 <li><a class="page-scroll" href="#contact">CONTATO</a></li>
             </ul>
         </div>

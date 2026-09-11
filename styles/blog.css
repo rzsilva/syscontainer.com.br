@@ -1,0 +1,235 @@
+/* ==========================================================================
+   SYSContainer — Blog (listagem + posts)
+   Carregado depois de style.css e custom.css.
+   ========================================================================== */
+
+.sc-blog-body {
+  background: #fff;
+}
+
+/* ---------- Listagem ---------- */
+
+.landing-page header.sc-blog-hero {
+  height: auto;
+  padding: 150px 0 60px;
+  background: linear-gradient(180deg, #eef4fa 0%, #ffffff 100%);
+  text-align: center;
+}
+
+.landing-page .sc-blog-hero h1 {
+  margin-bottom: 12px;
+}
+
+.landing-page .sc-blog-grid {
+  padding: 60px 0 80px;
+}
+
+.sc-blog-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sc-blog-cards > div {
+  margin-bottom: 30px;
+}
+
+.landing-page .sc-blog-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius);
+  padding: 26px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.landing-page a.sc-blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sc-shadow);
+  text-decoration: none;
+}
+
+.sc-blog-card-tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sc-blue-dark);
+  background: rgba(52, 152, 219, 0.1);
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-bottom: 14px;
+}
+
+.landing-page .sc-blog-card h3 {
+  font-size: 19px;
+  margin: 0 0 10px;
+  color: var(--sc-navy);
+}
+
+.landing-page .sc-blog-card p {
+  color: var(--sc-muted);
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.sc-blog-card-cta {
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--sc-blue-dark);
+}
+
+.sc-blog-card-cta i {
+  margin-left: 4px;
+}
+
+/* ---------- Post ---------- */
+
+.landing-page header.sc-post-hero {
+  height: auto;
+  padding: 150px 0 50px;
+  background: linear-gradient(180deg, #eef4fa 0%, #ffffff 100%);
+  text-align: center;
+}
+
+.sc-post-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sc-blue-dark);
+  background: rgba(52, 152, 219, 0.1);
+  border-radius: 999px;
+  padding: 6px 14px;
+  margin-bottom: 16px;
+}
+
+.landing-page .sc-post-hero h1 {
+  font-size: 32px;
+  max-width: 760px;
+  margin: 0 auto 14px;
+  line-height: 1.3;
+}
+
+.sc-post-meta {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.sc-post-body {
+  padding: 50px 0 70px;
+}
+
+.sc-post-body article,
+.sc-post-body .sc-post-content {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--sc-ink);
+}
+
+.landing-page .sc-post-content h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.landing-page .sc-post-content h3 {
+  font-size: 19px;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.sc-post-content p {
+  color: var(--sc-ink);
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+.sc-post-content ul,
+.sc-post-content ol {
+  margin-bottom: 18px;
+  padding-left: 22px;
+}
+
+.sc-post-content li {
+  margin-bottom: 8px;
+}
+
+.sc-post-content a {
+  color: var(--sc-blue-dark);
+  font-weight: 600;
+}
+
+/* Caixa de CTA embutida no corpo do post */
+.sc-post-cta {
+  background: var(--sc-bg-soft);
+  border: 1px solid var(--sc-border);
+  border-left: 4px solid var(--sc-blue);
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin: 30px 0;
+}
+
+.sc-post-cta p {
+  margin: 0 0 12px;
+  color: var(--sc-ink);
+}
+
+.sc-post-cta .btn {
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Menção discreta usada nos posts subliminares */
+.sc-post-soft-note {
+  font-size: 15px;
+  color: var(--sc-muted);
+  border-top: 1px solid var(--sc-border);
+  padding-top: 20px;
+  margin-top: 34px;
+}
+
+.sc-post-soft-note a {
+  color: var(--sc-blue-dark);
+  font-weight: 600;
+}
+
+/* ---------- Rodapé simples do blog ---------- */
+
+.landing-page .sc-blog-footer {
+  padding: 24px 0;
+  text-align: center;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.sc-blog-footer a {
+  color: var(--sc-blue-dark);
+  font-weight: 600;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 767px) {
+  .landing-page header.sc-blog-hero,
+  .landing-page header.sc-post-hero {
+    padding: 120px 0 40px;
+  }
+
+  .landing-page .sc-post-hero h1 {
+    font-size: 24px;
+  }
+
+  .sc-post-content p,
+  .sc-post-body article,
+  .sc-post-body .sc-post-content {
+    font-size: 16px;
+  }
+}
