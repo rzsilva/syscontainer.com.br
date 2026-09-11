@@ -44,8 +44,11 @@ header('Content-Type: text/html; charset=utf-8');
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="../index.php#page-top">INÍCIO</a></li>
+                <li><a href="../index.php#detail">O SISTEMA</a></li>
                 <li><a href="../index.php#features">FUNCIONALIDADES</a></li>
+                <li><a href="../index.php#integrations">INTEGRAÇÕES</a></li>
                 <li><a href="../index.php#pricing">PLANOS</a></li>
+                <li><a href="../index.php#faq">DÚVIDAS</a></li>
                 <li class="active"><a href="index.php">BLOG</a></li>
                 <li><a href="../index.php#contact">CONTATO</a></li>
             </ul>
