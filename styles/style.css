@@ -3709,9 +3709,12 @@ ul.h-list li:hover a {
 /* WhatsApp floating contact button */
 .whatsapp-bar {
   margin-bottom: -48px;
+  /* a barra ocupa a largura toda; só o botão deve receber cliques */
+  pointer-events: none;
 }
 .whatsapp-float {
   z-index: 9999999;
+  pointer-events: auto;
 }
 .whatsapp-link {
   color: #3498db;
