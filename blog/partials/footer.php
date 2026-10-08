@@ -9,7 +9,7 @@
 <footer class="sc-blog-footer">
     <div class="container text-center">
         <p>&copy; 2015–<?php echo date('Y'); ?> ADALINE Sistemas e Tecnologia — <a href="../index.php">SYSContainer</a></p>
-        <p style="font-size: 11px; opacity: .6; margin: 0;">Desenvolvido por <a href="https://www.adaline.com.br/" target="_blank" rel="noopener">adaline.com.br</a></p>
+        <p style="font-size: 11px; opacity: .6; margin: 0;">Desenvolvido por <a href="https://www.adaline.com.br/" target="_blank" rel="noopener">Adaline</a></p>
     </div>
 </footer>
 
