@@ -483,7 +483,7 @@
 </section>
 
 <footer class="text-center" style="padding: 12px 0; font-size: 11px; opacity: .6;">
-    Desenvolvido por <a href="https://www.adaline.com.br/" target="_blank" rel="noopener">Adaline</a>
+    Desenvolvido por <a href="https://www.adaline.com.br/" target="_blank" rel="noopener" style="color: #3498db; text-decoration: underline;">Adaline</a>
 </footer>
 
 <!-- Ícone Whatsapp -->
