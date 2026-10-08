@@ -482,6 +482,10 @@
     </div>
 </section>
 
+<footer class="text-center" style="padding: 12px 0; font-size: 11px; opacity: .6;">
+    Desenvolvido por <a href="https://www.adaline.com.br/" target="_blank" rel="noopener">adaline.com.br</a>
+</footer>
+
 <!-- Ícone Whatsapp -->
 <section class="navbar-fixed-bottom navbar-shrink whatsapp-bar">
     <div class="element pull-right whatsapp-float">
